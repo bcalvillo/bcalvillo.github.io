@@ -1,3 +1,4 @@
+// scripts.js
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("El sitio web de Benjam’ Calvillo Melero est‡ listo.");
+    console.log("El sitio web de Benjamí Calvillo Melero está listo.");
 });

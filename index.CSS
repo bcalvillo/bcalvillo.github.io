@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -15,16 +16,50 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    position: relative;
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px 15px;
     color: #fff;
     text-decoration: none;
+}
+
+nav ul li:hover > a {
+    background-color: #555;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #555;
 }
 
 main {
@@ -35,9 +70,8 @@ section {
     margin-bottom: 20px;
 }
 
-#intro h2 {
+#home, #about, #code, #publications, #cv {
     text-align: center;
-    color: #333;
 }
 
 footer {
