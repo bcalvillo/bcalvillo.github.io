@@ -1,52 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamí Calvillo Melero</title>
+    <title>Responsive Topnav</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <span class="menu-toggle" id="menu-toggle">☰</span>
-        <h1>Benjamí Calvillo Melero</h1>
-    </header>
-    <nav id="sidebar" class="sidebar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#cv">CV</a></li>
-        </ul>
-    </nav>
-    <main id="main-content">
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to the personal website of Benjamí Calvillo Melero.</p>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am benjamí Calvillo Melero, PhD student at the polytechnic university of catalonia. My research is focused on the study of the dynamics of the seimentary dynamics in the catalan continental shelf using free and accessible numerical modeling data for the whole world (CMEMS DATA). Moreover, I study the morphological changes of the Ebro delta by means of numerical modeling, analysis of in situ data and satellite imagery data.</p>
-        </section>
-        <section id="code">
-            <h2>Code</h2>
-            <p>Aquí puedes ver algunos de mis proyectos de código destacados.</p>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>Aquí puedes ver algunas de mis publicaciones académicas.</p>
-        </section>
-        <section id="cv">
-            <h2>CV</h2>
-            <p>Descarga mi CV <a href="cv.pdf" target="_blank">aquí</a>.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Benjamí Calvillo Melero</p>
-    </footer>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            &#9776;
+        </a>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
-
