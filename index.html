@@ -3,46 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coastal Dynamics Research Group</title>
+    <title>Coastal Dynamics Lab</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <nav class="nav">
             <div class="nav__container">
-                <a href="#" class="nav__logo">Coastal Dynamics</a>
+                <a href="#" class="nav__logo">🌊 CoastalLab</a>
                 <div class="nav__links">
-                    <a href="#research">Research</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#team">Team</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#research" class="nav__link">Research</a>
+                    <a href="#projects" class="nav__link">Projects</a>
+                    <a href="#team" class="nav__link">Team</a>
+                    <a href="#contact" class="nav__link">Contact</a>
                 </div>
             </div>
         </nav>
+        
         <div class="hero__content">
-            <h1 class="hero__title">Coastal Systems Research</h1>
-            <p class="hero__subtitle">Understanding the interaction between tides, waves, and coastal morphology</p>
+            <div class="hero__text">
+                <h1 class="hero__title">Decoding Coastal <span>Dynamics</span></h1>
+                <p class="hero__subtitle">Where tides meet innovation in coastal research</p>
+                <a href="#research" class="hero__cta">Explore Our Work →</a>
+            </div>
         </div>
     </header>
 
-    <section id="research" class="section research-section">
+    <section id="research" class="section research">
         <div class="section__container">
-            <h2 class="section__title">Research Focus</h2>
-            <div class="research-grid">
-                <div class="research-content">
-                    <p class="research-text">We study how tides, waves, and sea level shape coastal environments. Our research focuses on:</p>
-                    <ul class="research-list">
-                        <li>Past and future evolution of barrier islands</li>
-                        <li>River delta dynamics and sediment transport</li>
-                        <li>Coastal hazards and climate adaptation</li>
-                        <li>Integrated field and numerical modeling approaches</li>
-                    </ul>
+            <div class="research__grid">
+                <div class="research__content">
+                    <h2 class="section__title">Research Focus</h2>
+                    <p class="research__text">We study how tides, waves, and sea level shape coastal environments through:</p>
+                    <div class="research__cards">
+                        <div class="card">
+                            <div class="card__icon">🌴</div>
+                            <h3>Barrier Islands Evolution</h3>
+                            <p>Historical analysis and predictive modeling of coastal landforms</p>
+                        </div>
+                        <div class="card">
+                            <div class="card__icon">🌊</div>
+                            <h3>Coastal Hazards</h3>
+                            <p>Risk assessment and mitigation strategies for coastal communities</p>
+                        </div>
+                        <div class="card">
+                            <div class="card__icon">📈</div>
+                            <h3>Sea Level Analytics</h3>
+                            <p>Advanced monitoring and predictive algorithms</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="research-visual">
-                    <img src="assets/coastal-schema.png" alt="Coastal processes diagram" class="research-image">
+                <div class="research__visual">
+                    <div class="floating-container">
+                        <img src="assets/coastal-schema.svg" alt="Coastal dynamics" class="floating-img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,10 +67,14 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <p class="footer__copyright">&copy; <span id="year"></span> Coastal Dynamics Research Group</p>
-            <div class="footer__links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#accessibility">Accessibility</a>
+            <div class="footer__brand">
+                <div class="footer__logo">🌊 CoastalLab</div>
+                <p>Pioneering Coastal Science</p>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="social__link">Twitter</a>
+                <a href="#" class="social__link">LinkedIn</a>
+                <a href="#" class="social__link">GitHub</a>
             </div>
         </div>
     </footer>
