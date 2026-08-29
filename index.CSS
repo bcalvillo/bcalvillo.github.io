@@ -52,6 +52,14 @@ body {
     z-index: 1;
 }
 
+.brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
 .nav__logo {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.8rem;
