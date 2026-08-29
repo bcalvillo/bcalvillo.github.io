@@ -87,6 +87,28 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
+.hero-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+}
+
+.hero-photo {
+    margin: 0;
+    justify-self: end;
+}
+
+.hero-photo img {
+    display: block;
+    width: min(320px, 100%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
 .eyebrow {
     margin: 0;
     color: var(--primary);
@@ -191,6 +213,14 @@ a {
 
     .hero {
         padding-top: 4.6rem;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-photo {
+        justify-self: start;
     }
 
     .grid {
