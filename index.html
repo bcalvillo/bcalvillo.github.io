@@ -3,105 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjami Calvillo | Research</title>
+    <title>Benjamí Calvillo | Coastal Research</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#data">Data and Code</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="hero">
-        <div class="overlay">
-            <h1>Benjami Calvillo</h1>
-            <h2>PhD Student at UPC</h2>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#top">Benjamí Calvillo</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section id="research">
-        <h2>Research</h2>
-        <div class="underline"></div>
-        <p>We study how tides, waves, and sea level shape coastal environments. We focus on the past and future of barrier islands and river deltas, and apply our research to investigate coastal hazards and adaptation.</p>
-    </section>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">PhD Student at UPC</p>
+                <h1>Researching coastal dynamics, hazards, and adaptation</h1>
+                <p class="lead">
+                    We study how tides, waves, and sea level shape coastal environments,
+                    focusing on barrier islands and river deltas across past and future scenarios.
+                </p>
+                <div class="hero-links">
+                    <a class="button" href="https://es.linkedin.com/in/benjam%C3%AD-calvillo-melero-627b82145" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="button button-secondary" href="https://scholar.google.com/citations?user=If6LVzUAAAAJ&amp;hl=ca" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    I work on coastal science and geomorphology, connecting process-based understanding
+                    with practical questions around climate impacts and adaptation planning.
+                </p>
+            </div>
+        </section>
+
+        <section id="research" class="section section-muted">
+            <div class="container">
+                <h2>Research</h2>
+                <p>
+                    Our work investigates how tides, waves, and sea-level variability influence shoreline change,
+                    barrier island behavior, and deltaic environments. This supports coastal hazard assessment
+                    and long-term adaptation strategies.
+                </p>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="container">
+                <h2>Work</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Data and Code</h3>
+                        <p>Numerical analysis and reproducible workflows for coastal process studies.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Media</h3>
+                        <p>Scientific communication and outreach around coastal hazards and adaptation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section section-muted">
+            <div class="container">
+                <h2>Publications</h2>
+                <p>
+                    Selected papers and citation metrics are available on
+                    <a href="https://scholar.google.com/citations?user=If6LVzUAAAAJ&amp;hl=ca" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>You can connect with me through the platforms below:</p>
+                <ul class="contact-list">
+                    <li><a href="https://es.linkedin.com/in/benjam%C3%AD-calvillo-melero-627b82145" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=If6LVzUAAAAJ&amp;hl=ca" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-/* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #f4f4f4;
-}
-
-header {
-    background: #00274D;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px;
-}
-
-#hero {
-    background: url('header-image.jpg') no-repeat center;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: relative;
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-#research {
-    padding: 50px;
-    background: white;
-    margin-top: -50px;
-}
-
-.underline {
-    width: 50px;
-    height: 3px;
-    background: #E95420;
-    margin: 10px auto;
-}
-
-/* script.js */
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Page loaded!");
-});
