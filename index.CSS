@@ -84,7 +84,29 @@ body {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
+/* About Section */
+.subsection {
+    margin-top: 4rem;
+}
 
+.subsection h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.education-item p {
+    color: var(--text-secondary);
+    margin: 0;
+}
 .hero__content {
     position: relative;
     z-index: 1;
