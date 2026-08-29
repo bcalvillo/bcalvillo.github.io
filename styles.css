@@ -189,6 +189,50 @@ h2 {
     margin-bottom: 0.45rem;
 }
 
+.publication-item {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+.publication-image-link {
+    display: block;
+}
+
+.publication-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border);
+}
+
+.publication-content h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.16rem;
+}
+
+.publication-label {
+    margin: 0 0 0.45rem;
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.publication-link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .contact-list {
     margin: 1rem 0 0;
     padding-left: 1.25rem;
@@ -219,6 +263,10 @@ a:focus-visible {
     }
 
     .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .publication-item {
         grid-template-columns: 1fr;
     }
 }
