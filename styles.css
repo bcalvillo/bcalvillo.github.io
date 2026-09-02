@@ -187,14 +187,65 @@ h1 {
     margin-bottom: 0.75rem;
 }
 
-.education-item,
-.trajectory-item {
-    margin-bottom: 1rem;
+.timeline {
+    position: relative;
+    padding: 1rem 1rem 0.25rem 2.1rem;
+    border-radius: 0.9rem;
+    background: #06263a;
+    border: 1px solid rgba(91, 246, 235, 0.28);
+    color: #dceff5;
 }
 
-.education-item h4,
-.trajectory-item h4 {
-    margin: 0 0 0.2rem;
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    bottom: 1.2rem;
+    left: 1rem;
+    width: 2px;
+    background: linear-gradient(180deg, #52f3df 0%, rgba(82, 243, 223, 0.35) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.45rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0.65rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: -1.48rem;
+    width: 0.74rem;
+    height: 0.74rem;
+    border-radius: 999px;
+    border: 2px solid #52f3df;
+    background: #06263a;
+    box-shadow: 0 0 10px rgba(82, 243, 223, 0.75);
+}
+
+.timeline-date {
+    margin: 0;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #79f7e6;
+}
+
+.timeline-item h4 {
+    margin: 0.28rem 0 0.15rem;
+    color: #eefaff;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #c9e8f1;
+    line-height: 1.55;
 }
 
 .grid {
