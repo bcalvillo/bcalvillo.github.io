@@ -176,6 +176,27 @@ h1 {
     color: var(--text-muted);
 }
 
+.subsection.two-columns {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.column h3 {
+    margin-bottom: 0.75rem;
+}
+
+.education-item,
+.trajectory-item {
+    margin-bottom: 1rem;
+}
+
+.education-item h4,
+.trajectory-item h4 {
+    margin: 0 0 0.2rem;
+}
+
 .grid {
     margin-top: 1rem;
     display: grid;
@@ -226,6 +247,10 @@ a {
     }
 
     .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subsection.two-columns {
         grid-template-columns: 1fr;
     }
 }
