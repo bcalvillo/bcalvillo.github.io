@@ -83,7 +83,9 @@ body {
 
 .hero {
     padding: 5.75rem 0 4rem;
-    background: linear-gradient(170deg, #eff6ff 0%, #f8fafc 65%);
+    background:
+        linear-gradient(170deg, rgba(248, 250, 252, 0.78) 0%, rgba(248, 250, 252, 0.7) 65%),
+        url("https://github.com/user-attachments/assets/a8cd77dc-982a-47a9-8f14-4cf313046e3c") center / cover no-repeat;
     border-bottom: 1px solid var(--border);
 }
 
